@@ -9,11 +9,17 @@
 int main(void)
 {
 	char ch = 'A';
+	char sch = 'a';
 
-	for (ch = 'A'; ch <= 'Z'; ch++)
+	while (ch <= 'Z')
 	{
 		putchar(tolower(ch));
-		putchar(toupper(ch));
+		ch++;
+	}
+	while (sch <= 'z')
+	{
+		putchar(toupper(sch));
+		sch++;
 	}
 	putchar('\n');
 	return (0);
