@@ -1,26 +1,21 @@
 #include <stdio.h>
 #include <ctype.h>
-#include "main2.h"
+#include "main.h"
 
 /**
+ * print_alphabet - function
  * main - Entry point
- *
- * Return: Always 0 (success)
+ * Return: Always 0(success)
  */
 
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 void print_alphabet(void)
 {
-	int alphabet;
+	int a;
 
-	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
+	for (a = 'A'; a <= 'z'; a++)
 	{
-		putchar(tolower(alphabet));
+		putchar(tolower(a));
 	}
 	putchar('\n');
-	return;
 }
+
