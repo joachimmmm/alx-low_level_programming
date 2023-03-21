@@ -12,7 +12,7 @@ void print_alphabet(void)
 {
 	int a;
 
-	for (a = 'A'; a <= 'z'; a++)
+	for (a = 'A'; a <= 'Z'; a++)
 	{
 		putchar(tolower(a));
 	}
