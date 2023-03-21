@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-#include "alphabet.h"
+#include "main.h"
 
 /**
  * main - Entry point
@@ -12,4 +12,15 @@ int main(void)
 {
 	print_alphabet();
 	return (0);
+}
+void print_alphabet(void)
+{
+	int alphabet;
+
+	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
+	{
+		putchar(tolower(alphabet));
+	}
+	putchar('\n');
+	return;
 }
