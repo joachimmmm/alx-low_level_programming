@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * _isdigit - checks for a digit 
- * @c: the digit that will be passed
- * Return: always 0
+ * _isdigit - checks for a digit
+ * @c: the num to be checked
+ * Return: 1 for a num and 0 for anything else
  */
 
 int _isdigit(int c)
