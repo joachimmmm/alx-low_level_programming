@@ -3,7 +3,7 @@
 
 /**
  * puts2 - prints other char of str
- * @str: The string 
+ * @str: The string
  * Return: void
  */
 void puts2(char *str)
