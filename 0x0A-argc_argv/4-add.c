@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 				}
 			}
 			nsum += atoi(ag);
-			nsum++;
+			ag++;
 		}
 		printf("%d\n", nsum);
 	}
