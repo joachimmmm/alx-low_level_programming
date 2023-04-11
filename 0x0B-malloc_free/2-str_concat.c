@@ -13,7 +13,8 @@ char *str_concat(char *s1, char *s2)
 	int a = 0;
 	int b = 0;
 	int c = 0;
-	int ind1;
+	int i1 = 0;
+	int i2 = 0;
 	char *newstr;
 
 	if (s1 == NULL)
@@ -39,13 +40,13 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	for (ind1 = 0; ind1 < a; ind1++)
+	for (i1 = 0; s1[i1] != '\0'; i1++)
 	{
-		newstr[ind1] = s1[ind1];
+		newstr[i1] = s1[i1];
 	}
-	for (ind1 = 0; ind1 < b; ind1++)
+	for (i2 = 0; s2[i2] != '\0'; i2++)
 	{
-		newstr[ind1] = s2[ind1];
+		newstr[i1 + i2] = s2[i2];
 	}
 	newstr[c] = '\0';
 	return (newstr);
