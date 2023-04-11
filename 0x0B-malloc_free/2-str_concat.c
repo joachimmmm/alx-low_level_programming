@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * str_concat - func that concatenates
  * @s1: 1st str
@@ -10,11 +9,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int a = 0;
-	int b = 0;
-	int c = 0;
-	int i1 = 0;
-	int i2 = 0;
+	int a = 0, b = 0, c = 0, i1 = 0, i2 = 0;
 	char *newstr;
 
 	if (s1 == NULL)
@@ -35,19 +30,23 @@ char *str_concat(char *s1, char *s2)
 	}
 	c = a + b;
 	newstr = malloc((sizeof(char) * c) + 1);
-
 	if (newstr == NULL)
 	{
 		return (NULL);
 	}
-	for (i1 = 0; s1[i1] != '\0'; i1++)
+	while (i1 < c)
 	{
-		newstr[i1] = s1[i1];
+		if (i1 <= a)
+		{
+			newstr[i1] = s1[i1];
+		}
+		if (i1 >= a)
+		{
+			newstr[i1] = s2[i2];
+			i2++;
+		}
+		i1++;
 	}
-	for (i2 = 0; s2[i2] != '\0'; i2++)
-	{
-		newstr[i1 + i2] = s2[i2];
-	}
-	newstr[c] = '\0';
+	newstr[i1] = '\0';
 	return (newstr);
 }
