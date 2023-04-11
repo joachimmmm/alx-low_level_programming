@@ -4,12 +4,12 @@
 #include <string.h>
 
 /**
- * atoi - a to i
+ * _atoi - a to i
  * @s: str
  * Return: str
  */
 
 int _atoi(char *s)
 {
-	return atoi (s);
+	return (s);
 }
