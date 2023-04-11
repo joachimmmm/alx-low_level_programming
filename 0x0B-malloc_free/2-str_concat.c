@@ -34,18 +34,16 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	while (i1 < c)
+	while (s1[i1] != '\0')
 	{
-		if (i1 <= a)
-		{
-			newstr[i1] = s1[i1];
-		}
-		if (i1 >= a)
-		{
-			newstr[i1] = s2[i2];
-			i2++;
-		}
+		newstr[i1] = s1[i1];
 		i1++;
+	}
+	while (s2[i2] != '\0')
+	{
+		newstr[i1] = s2[i2];
+		i1++;
+		i2++;
 	}
 	newstr[i1] = '\0';
 	return (newstr);
