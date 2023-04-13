@@ -15,7 +15,7 @@ void *malloc_checked(unsigned int b)
 	{
 		return (NULL);
 	}
-	bee = malloc(sizeof(char) + 1);
+	bee = malloc(b * sizeof(char));
 	if (bee == NULL)
 	{
 		exit(98);
