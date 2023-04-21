@@ -4,7 +4,7 @@
 
 /**
  * print_numbers - prints nums
- * @seperator: str btw nums
+ * @separator: str btw nums
  * @n: argc
  * Return: void
  */
@@ -18,10 +18,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (index = 0; index < n; index++)
 	{	nums = va_arg(newlist, int);
 		printf("%d", nums);
-	}
 	if (separator != NULL && index < n - 1)
 	{
 		printf("%s", separator);
+	}
 	}
 	va_end(newlist);
 	printf("\n");
