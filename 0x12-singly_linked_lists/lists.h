@@ -1,5 +1,7 @@
 #ifndef HEADER_H
 #define HEADER_H
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct list_s - singly linked list
@@ -9,9 +11,6 @@
  *
  * Desrcription: singly linked list node structure
  */
-#include <stdlib.h>
-#include <stdio.h>
-
 typedef struct list_s
 {
 	char *str;
