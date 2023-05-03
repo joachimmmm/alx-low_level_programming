@@ -10,7 +10,7 @@ int sum_listint(listint_t *head)
 	listint_t *temp_node = head;
 	int numsum = 0;
 
-	while(temp_node)
+	while (temp_node)
 	{
 		numsum += (*temp_node).n;
 		temp_node = (*temp_node).next;
