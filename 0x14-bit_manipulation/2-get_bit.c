@@ -2,8 +2,8 @@
 
 /**
  * get_bit - get value of bit at idx
- * @index - index
  * @n: num
+ * @index: index from 0
  * Return: -1 if error
  */
 int get_bit(unsigned long int n, unsigned int index)
