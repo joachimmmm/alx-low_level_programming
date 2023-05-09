@@ -16,7 +16,7 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	if (text_content != NULL)
+	if (text_content)
 	{
 		for (index = 0; text_content[index];)
 		{
@@ -25,7 +25,7 @@ int create_file(const char *filename, char *text_content)
 	}
 	filep = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	writer = write(filep, text_content, index);
-	if (writer == -1 || filep == -1)
+	if (filep == -1 || writer == -1)
 	{
 		return (-1);
 	}
