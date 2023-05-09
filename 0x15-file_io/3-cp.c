@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			free(buffspace);
-			exit (98);
+			exit(98);
 		}
 		writer = write(opener2, buffspace, reader);
 		if (writer == -1 || opener2 == -1)
