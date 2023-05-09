@@ -6,7 +6,7 @@
  * @letters: letters to be read.
  * Return: num of bytes
  */
-ssize_t read_textfile (const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t writer, reader, filep;
 	char *space;
