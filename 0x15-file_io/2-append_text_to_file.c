@@ -23,7 +23,7 @@ int append_text_to_file(const char *filename, char *text_content)
 			index++;
 		}
 	}
-	opener = open(filename, O_WRONLY |O_APPEND);
+	opener = open(filename, O_WRONLY | O_APPEND);
 	writer = write(opener, text_content, index);
 	if (writer == -1 || opener == -1)
 	{
@@ -32,5 +32,3 @@ int append_text_to_file(const char *filename, char *text_content)
 	close(opener);
 	return (1);
 }
-
-
