@@ -12,7 +12,7 @@ int create_file(const char *filename, char *text_content)
 	int index;
 	int writer;
 
-	if (filename == NULL)
+	if (!filename)
 	{
 		return (-1);
 	}
@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 			index++;
 		}
 	}
-	filep = open(filename, O_CREAT | O_TRUNC | O_RDWR);
+	filep = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	writer = write(filep, text_content, index);
 	if (writer == -1 || filep == -1)
 	{
